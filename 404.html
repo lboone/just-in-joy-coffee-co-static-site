@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found | Just-In Joy Coffee Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="3; url=/" />
+    <link rel="stylesheet" href="assets/css/styles.min.css?v=1.0.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f9f9f9;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .error-logo {
+        margin-bottom: 2rem;
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+      }
+      .error-title {
+        font-size: 2.5rem;
+        color: #7c4d1e;
+        margin-bottom: 1rem;
+      }
+      .error-message {
+        font-size: 1.2rem;
+        color: #444;
+        margin-bottom: 3rem;
+        line-height: 2;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px #ccc;
+        animation: fadeIn 1s ease-in-out;
+      }
+      .home-btn {
+        display: inline-block;
+        padding: 0.75em 2em;
+        background: #7c4d1e;
+        color: #fff;
+        border-radius: 2em;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .home-btn:hover {
+        background: #a67c52;
+      }
+    </style>
+    <script>
+      // Fallback JS redirect if meta doesn't work
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 3000);
+    </script>
+  </head>
+  <body>
+    <img
+      src="https://34vzegrc44.ufs.sh/f/OLruIQ0Z82Z71gwUfdmAgWcxESyf04nt37JvZTBAKrQ2NlhR"
+      alt="Just-In Joy Coffee Co. Logo"
+      class="error-logo"
+    />
+    <div class="error-title">404 - Page Not Found</div>
+    <div class="error-message">
+      Oops! The page you’re looking for doesn’t exist.<br />
+      You’ll be redirected to the homepage in a moment.<br />
+    </div>
+    <div class="error-message">Or</div>
+    <div class="error-message">
+      <a href="/" class="home-btn button">Go to Homepage Now</a>
+    </div>
+  </body>
+</html>

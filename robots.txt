@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://just-in-joy-coffee-co.com/sitemap.xml
