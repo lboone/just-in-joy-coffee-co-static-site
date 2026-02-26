@@ -39,10 +39,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "assets/js/main.min.js": {
-      "includeFiles": "**"
-    }
-  }
+  ]
 }

@@ -12,18 +12,21 @@ async function fetchWithErrorHandling(url, fallbackData = null) {
     return data;
   } catch (error) {
     console.error(`Failed to fetch ${url}:`, error);
-    
+
     // Show user-friendly error message
-    showNotification(`Unable to load latest content. Some features may be limited.`, 'warning');
-    
+    showNotification(
+      `Unable to load latest content. Some features may be limited.`,
+      "warning",
+    );
+
     // Return fallback data if available
     return fallbackData;
   }
 }
 
 // Show notification to users
-function showNotification(message, type = 'info') {
-  const notification = document.createElement('div');
+function showNotification(message, type = "info") {
+  const notification = document.createElement("div");
   notification.className = `notification notification--${type}`;
   notification.innerHTML = `
     <div class="notification__content">
@@ -34,9 +37,9 @@ function showNotification(message, type = 'info') {
       </button>
     </div>
   `;
-  
+
   document.body.appendChild(notification);
-  
+
   // Auto-remove after 5 seconds
   setTimeout(() => {
     if (notification.parentElement) {
@@ -117,6 +120,6 @@ const additionalCSS = `
 `;
 
 // Inject additional CSS
-const style = document.createElement('style');
+const style = document.createElement("style");
 style.textContent = additionalCSS;
 document.head.appendChild(style);
