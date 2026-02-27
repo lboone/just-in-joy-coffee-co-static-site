@@ -1,9 +1,9 @@
 {
-  "version": 2,
-  "builds": [
+  "redirects": [
     {
-      "src": "**/*",
-      "use": "@vercel/static"
+      "source": "https://just-in-joy-coffee-co-static-site-f.vercel.app/:path*",
+      "destination": "https://just-in-joy-coffee-co.com/:path*",
+      "permanent": true
     }
   ],
   "rewrites": [
