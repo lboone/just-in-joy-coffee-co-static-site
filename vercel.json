@@ -6,6 +6,12 @@
       "use": "@vercel/static"
     }
   ],
+  "rewrites": [
+    {
+      "source": "/api/v1/(.*)",
+      "destination": "https://just-in-joy-coffee-co-vmckt7lji-lloyd-boones-projects.vercel.app/v1/$1"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
