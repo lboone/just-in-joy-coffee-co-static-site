@@ -12,6 +12,8 @@ Your site is configured to dynamically load content from your admin panel APIs. 
 
 ### API Endpoints Used:
 
+Made with ❤️ by [Lloyd Boone](https://twitter.com/lloydboone)
+
 ```
 Base URL: https://just-in-joy-coffee-co-vmckt7lji-lloyd-boones-projects.vercel.app
 
